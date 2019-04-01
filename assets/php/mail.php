@@ -6,16 +6,16 @@ $mail = new PHPMailer; // create a new object
 $mail->IsSMTP(); // enable SMTP
 $mail->SMTPDebug = 1; // debugging: 1 = errors and messages, 2 = messages only
 $mail->SMTPAuth = true; // authentication enabled
-$mail->SMTPSecure = 'ssl'; // secure transfer enabled REQUIRED for Gmail
-$mail->SMTPOptions = array(
-   'ssl' => array(
-     'verify_peer' => false,
-     'verify_peer_name' => false,
-     'allow_self_signed' => true
-    )
-);
+$mail->SMTPSecure = 'tls'; // secure transfer enabled REQUIRED for Gmail
+// $mail->SMTPOptions = array(
+//    'ssl' => array(
+//      'verify_peer' => false,
+//      'verify_peer_name' => false,
+//      'allow_self_signed' => true
+//     )
+// );
 $mail->Host = "tls://smtp.gmail.com:587";
-$mail->Port = 465; // or 587
+$mail->Port = 587; // or 587
 $mail->IsHTML(true);
 $mail->Username = "lanius.agni@gmail.com";
 $mail->Password = "onestepahead";
