@@ -27,7 +27,8 @@ $mail->Body =   	'Nama : '.$_POST['name'].'<br>'.
 $mail->AddAddress("reyno33333@gmail.com");
 $mail->Send();
  if(!$mail->Send()) {
-    echo "Mailer Error: " . $mail->ErrorInfo;
+  echo $mail->Body;
+    echo "<br> Mailer Error: " . $mail->ErrorInfo;
  } else {
     header('location:../../.');
  }
