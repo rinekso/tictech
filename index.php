@@ -371,10 +371,7 @@
     </div>
   </div>
 </div>
-<?php
-if(@$_GET['feedback'] == "1"){
-?>
-<div class="modal fade" id="modal" tabindex="1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="false">
+<div class="modal fade" id="feedback" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -389,8 +386,18 @@ if(@$_GET['feedback'] == "1"){
     </div>
   </div>
 </div>
+<?php
+if(@$_GET['feedback'] == "1"){
+?>
 
 <?php	
+        echo "
+        <script type='text/javascript'>
+    $(window).on('load',function(){
+        $('#feedback').modal('show');
+    });
+</script>
+        ";
 }
 ?>
 <script type="text/javascript" src="assets/plugins/jQuery/jquery-2.2.3.min.js"></script>
