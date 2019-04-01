@@ -27,11 +27,11 @@ $mail->Body =   	'Nama : '.$_POST['name'].'<br>'.
 $mail->AddAddress("reyno33333@gmail.com");
 $mail->Send();
  if(!$mail->Send()) {
-  echo $mail->Body;
-    echo "<br> Mailer Error: " . $mail->ErrorInfo;
+  // echo $mail->Body;
+  //   echo "<br> Mailer Error: " . $mail->ErrorInfo;
  } else {
-    header('location:../../.');
  }
+    header('location:../../.?feedback=1');
  /*
 $transport = Swift_SmtpTransport::newInstance('smtp.gmail.com', 465, "ssl")
   ->setUsername('reyno33333@gmail.com')
