@@ -386,6 +386,11 @@
     </div>
   </div>
 </div>
+<script type="text/javascript" src="assets/plugins/jQuery/jquery-2.2.3.min.js"></script>
+<script type="text/javascript" src="assets/plugins/bootstrap/dist/js/bootstrap.min.js"></script>
+<!-- <script src="assets/plugins/luxy.js-master/dist/js/luxy.min.js" charset="utf-8"></script> -->
+<script src="assets/plugins/slick-1.8.1/slick/slick.js" type="text/javascript" charset="utf-8"></script>
+<script type="text/javascript" src="assets/js/custom.js"></script>
 <?php
 if(@$_GET['feedback'] == "1"){
 ?>
@@ -400,10 +405,5 @@ if(@$_GET['feedback'] == "1"){
         ";
 }
 ?>
-<script type="text/javascript" src="assets/plugins/jQuery/jquery-2.2.3.min.js"></script>
-<script type="text/javascript" src="assets/plugins/bootstrap/dist/js/bootstrap.min.js"></script>
-<!-- <script src="assets/plugins/luxy.js-master/dist/js/luxy.min.js" charset="utf-8"></script> -->
-<script src="assets/plugins/slick-1.8.1/slick/slick.js" type="text/javascript" charset="utf-8"></script>
-<script type="text/javascript" src="assets/js/custom.js"></script>
 </body>
 </html>
