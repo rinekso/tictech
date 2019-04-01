@@ -14,7 +14,7 @@ $mail->SMTPSecure = 'tls'; // secure transfer enabled REQUIRED for Gmail
 //      'allow_self_signed' => true
 //     )
 // );
-$mail->Host = "tls://smtp.gmail.com:587";
+$mail->Host = "smtp.gmail.com";
 $mail->Port = 587; // or 587
 $mail->IsHTML(true);
 $mail->Username = "lanius.agni@gmail.com";
