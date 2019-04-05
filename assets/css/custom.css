@@ -992,6 +992,7 @@ footer .copyright a{
 	}
 	header.active{
 		height: 100%;
+		z-index: 9999;
 	}
 	header.active .col-6{
 		flex: 0 0 100%;
