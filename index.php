@@ -11,8 +11,9 @@
   gtag('config', 'UA-132734580-2');
 </script>
 	<title>Tictech | Studio VR & AR Indonesia</title>
-	<meta name="description" content="Tictech Studio merupakan software house yang bergerak dalam bidang VR (Virtual Reality) dan AR (Augmented Reality) di Indonesia. Kami mengerjakan beberapa proyek besar dalam visualisasi dan teknologi berbasis AR maupun VR. Setiap aplikasi VR dan AR dapat dikembangkan di sini. Tictech Studio.">
-	<meta name="keywords" content="AR, VR, AR & VR, AR VR Indonesia, Teknologi AR, Teknologi VR, VR Indonesia, AR Indonesia, Surabaya, Indonesia, Startup, Teknologi, Industri 4.0, 4.0, Game, Game Indie, Indie">
+	<meta name="description" lang="indonesia" content="Tictech Studio merupakan software house yang bergerak dalam bidang VR (Virtual Reality) dan AR (Augmented Reality) di Indonesia. Kami mengerjakan beberapa proyek besar dalam visualisasi dan teknologi berbasis AR maupun VR. Setiap aplikasi VR dan AR dapat dikembangkan di sini. Tictech Studio.">
+	<meta name="description" content="Tictech Studio is a software house that is engaged in VR (Virtual Reality) and AR (Augmented Reality) in Indonesia. We are working on several major projects in visualization and AR-based and VR-based technology. Every VR and AR application can be developed here. Tictech Studio." lang="english">
+	<meta name="keywords" content="AR, VR, AR & VR, AR VR Indonesia, Teknologi AR, Teknologi VR, VR Indonesia, AR Indonesia, Surabaya, Indonesia, Startup, Teknologi, Industri 4.0, 4.0, Game, Game Indie, Indie, Developer Game, Developer, Augmented Reality, Virtual Reality, Augmented Reality Virtual Reality Indonesia">
 
   <link rel="stylesheet" href="assets/plugins/pace-1.0.2/themes/blue/pace-theme-center-simple.css" />
 
