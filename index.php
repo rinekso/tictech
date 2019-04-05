@@ -10,7 +10,9 @@
 
   gtag('config', 'UA-132734580-2');
 </script>
-	<title>Tictech</title>
+	<title>Tictech | Studio VR & AR Indonesia</title>
+	<meta name="description" content="Tictech Studio merupakan software house yang bergerak dalam bidang VR (Virtual Reality) dan AR (Augmented Reality) di Indonesia. Kami mengerjakan beberapa proyek besar dalam visualisasi dan teknologi berbasis AR maupun VR. Setiap aplikasi VR dan AR dapat dikembangkan di sini. Tictech Studio.">
+	<meta name="keywords" content="AR, VR, AR & VR, AR VR Indonesia, Teknologi AR, Teknologi VR, VR Indonesia, AR Indonesia, Surabaya, Indonesia, Startup, Teknologi, Industri 4.0, 4.0, Game, Game Indie, Indie">
 
   <link rel="stylesheet" href="assets/plugins/pace-1.0.2/themes/blue/pace-theme-center-simple.css" />
 
@@ -57,7 +59,7 @@
 	</header>
 	<div class="logo">
 		<a href=".">
-			<img src="assets/image/TICTECH_LOGO.png">
+			<img alt="Tictech Studio Logo" src="assets/image/TICTECH_LOGO.png">
 		</a>
 		<div class="back">
 			<div class="row">
@@ -80,12 +82,12 @@
 		<img src="assets/image/FRONT_HEADER.png" class="front-banner">
 		<div class="anime-con row">
 			<div class="col-6">
-				<img src="assets/image/art-girl.png" class="anime right">
+				<img alt="icon AR (Augmented Reality) Tictech Studio VR AR Indonesia" src="assets/image/art-girl.png" class="anime right">
 				<img src="assets/image/art-girl-cube.png" class="anime right glow flying">
 				<img src="assets/image/art-girl-glow.png" class="anime right glow lighten">
 			</div>
 			<div class="col-6">
-				<img src="assets/image/art-boy.png" class="anime left">
+				<img alt="icon VR(Virtual Reality) Tictech Studio VR AR Indonesia" src="assets/image/art-boy.png" class="anime left">
 				<img src="assets/image/art-boy-golves.png" class="anime left glow2">
 				<img src="assets/image/art-boy-glow.png" class="anime left glow2 lighten">
 			</div>
@@ -105,16 +107,16 @@
 		<div class="box-container container">
 			<div class="row">
 				<div class="col-md-6 ss" data-offset=300 data-animate=fadeInLeft>
-					<div class="title title-1">Augmented Reality</div>
-					<div class="box box-1">
+					<h1 class="title title-1">Augmented Reality</h1>
+					<p class="box box-1">
 						changing our view of the world by merging our environmental surroundings with digital data and media so you can deliver your messages more interesting and interactive through AR technology.
-					</div>
+					</p>
 				</div>
 				<div class="col-md-6 ss" data-offset=300 data-animate=fadeInRight>
-					<div class="title title-2">Virtual Reality</div>
-					<div class="box box-2">
+					<h1 class="title title-2">Virtual Reality</h1>
+					<p class="box box-2">
 						With the help of software and VR device, you can enhance such an amazing and interactive experience in virtual world, and interact as though things around you are actually there.
-					</div>
+					</p>
 				</div>
 			</div>
 		</div>
@@ -190,9 +192,9 @@
 		<section class="slider center">
 			<div>
 				<img class="desktop" src="assets/image/background-product.png">
-				<img src="assets/image/ap-all2.png" class="mobile">
+				<img alt="Project Angkasa Pura body tracking gathot kaca dan srikandi oleh Tictech Studio VR dan AR Indonesia" src="assets/image/ap-all2.png" class="mobile">
 				<div class="item-slide item-slide-1" data-animate=fadeInDown>
-					<img src="assets/image/ap-1.png">
+					<img alt="Project Angkasa Pura body tracking gathot kaca dan srikandi oleh Tictech Studio VR dan AR Indonesia" src="assets/image/ap-1.png">
 				</div>
 				<div class="item-slide item-slide-2" data-animate=fadeInRight>
 					<img src="assets/image/ap-2.png">
@@ -204,9 +206,9 @@
 			<a href="https://play.google.com/store/apps/details?id=com.tictech.kelar" target="_blank">
 				<div>
 					<img class="desktop" src="assets/image/background-product.png">
-					<img src="assets/image/kuark-all2.png" class="mobile">
+					<img alt="Project KELAR untuk majalah KUARK oleh Tictech Studio VR dan AR Indonesia" src="assets/image/kuark-all2.png" class="mobile">
 					<div class="item-slide item-slide-kuark" data-animate=fadeInDown>
-						<img src="assets/image/kuark-4.gif">
+						<img alt="Project KELAR untuk majalah KUARK oleh Tictech Studio VR dan AR Indonesia" src="assets/image/kuark-4.gif">
 					</div>
 					<div class="item-slide item-slide-4" data-animate=fadeInDown>
 						<img src="assets/image/kuark-1.png">
@@ -222,9 +224,9 @@
 			<a href="#javascript:;" onclick="viretra()">
 				<div>
 					<img class="desktop" src="assets/image/background-product.png">
-					<img src="assets/image/viretra-all2.png" class="mobile">
+					<img alt="Project Fire training oleh Tictech Studio VR dan AR Indonesia" src="assets/image/viretra-all2.png" class="mobile">
 					<div class="item-slide item-slide-7" data-animate=fadeInDown>
-						<img src="assets/image/viretra-1.png">
+						<img alt="Project Fire training oleh Tictech Studio VR dan AR Indonesia" src="assets/image/viretra-1.png">
 					</div>
 					<div class="item-slide item-slide-8" data-animate=fadeInRight>
 						<img src="assets/image/viretra-3.png">
@@ -252,16 +254,24 @@
 		<div class="container-client">
 			<ul>
 				<div class="c-1">
-					<li class="ss"  data-offset=300 data-animate=bounceIn style="animation-delay: 0s;"><img src="assets/image/client/kuark.png"></li>
-					<li class="ss"  data-offset=300 data-animate=bounceIn style="animation-delay: .6s;"><img src="assets/image/client/panenmayadigital.png"></li>
+					<a target="_blank" href="http://www.komikuark.net/v2/"><li class="ss"  data-offset=300 data-animate=bounceIn style="animation-delay: 0s;"><img src="assets/image/client/kuark.png"></li></a>
+					<a target="_blank" href="https://panenmaya.com/"><li class="ss"  data-offset=300 data-animate=bounceIn style="animation-delay: .6s;"><img src="assets/image/client/panenmayadigital.png"></li></a>
 				</div>
 				<div class="c-2">
+					<a target="_blank" href=".">
 					<li class="ss" data-offset=380 data-animate=bounceIn style="animation-delay: .2s;"><img src="assets/image/client/iac.png"></li>
+					</a>
+					<a href=".">
 					<li class="ss" data-offset=380 data-animate=bounceIn style="animation-delay: .8s;"><img src="assets/image/client/sci.png"></li>
+					</a>
 				</div>
 				<div class="c-3">
+					<a target="_blank" href="https://www.angkasapura2.co.id/">
 					<li class="ss" data-offset=460 data-animate=bounceIn style="animation-delay: .4s;"><img src="assets/image/client/angkasaPura.png"></li>
+					</a>
+					<a href="http://gosafeacademy.com/" target="_blank">
 					<li class="ss" data-offset=460 data-animate=bounceIn style="animation-delay: 1s;"><img src="assets/image/client/gosafe.png"></li>
+					</a>
 				</div>
 			</ul>
 		</div>
@@ -310,16 +320,16 @@
 				<div class="col-md-6 ss" data-animate=fadeInRight data-offset=500>
 					<h2>GET IN TOUCH</h2>
 					<ul class="info">
-						<li><img src="assets/image/icon-mail.png" class="icon"> <span>info@tictechstudio.com</li>
-						<li><img src="assets/image/icon-phone.png" class="icon"> <span>+62 87878103333 (Phone/SMS)</li>
-						<li><img src="assets/image/icon-phone.png" class="icon"> <span>+62 87839575573 (Whatsapp/LINE)</li>
+						<li><img src="assets/image/icon-mail.png" class="icon"> <span>info@tictechstudio.com</span></li>
+						<li><img src="assets/image/icon-phone.png" class="icon"> <span>+62 87878103333 (Phone/SMS)</span></li>
+						<li><img src="assets/image/icon-phone.png" class="icon"> <span>+62 87839575573 (Whatsapp/LINE)</span></li>
 						<li><img src="assets/image/icon-loc.png" class="icon"> 
-							<span>Lanius Labs<br>
+							<p>Lanius Labs<br>
 							Jl. Dr. Ir. Soekarno No. 487<br>
 							Penjaringan Sari, Rungkut,<br>
 							Kota Surabaya,<br>
 							Jawa Timur, 60115
-							</span>
+							</p>
 						</li>
 					</ul>
 					<h2>CONNECT WITH US</h2>
@@ -351,7 +361,7 @@
 		<div class="copyright">
 			<div class="row">
 				<div class="col-6 align-right">All right reserved</div>
-				<div class="col-6 align-left">&copy; 2019 Lanius innovation lab</div>
+				<div class="col-6 align-left"><a href="https://www.linkedin.com/company/lanius-labs" target="_blank">&copy; 2019 Lanius innovation lab</a></div>
 			</div>
 		</div>
 	</footer>

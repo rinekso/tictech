@@ -851,6 +851,11 @@ footer .copyright{
 	width: 100%;
 	padding: 10px;
 	margin-top: 50px;
+	color: #fff;
+}
+footer .copyright a{
+	color: #fff !important;
+	text-decoration: none !important;
 }
 .back-mobile, .front-mobile, .mobile{
 	display: none;
