@@ -169,4 +169,5 @@ function sendMail(){
 function viretra(){
 	// console.log('asd');
 	$('#viretraModal').modal('show');
+	return false;
 }

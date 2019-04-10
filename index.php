@@ -223,7 +223,7 @@
 					</div>
 				</div>
 			</a>
-			<a href="#javascript:;" onclick="viretra()">
+			<a href="javascript:void()" onclick="viretra()">
 				<div>
 					<img class="desktop" src="assets/image/background-product.png">
 					<img alt="Project Fire training oleh Tictech Studio VR dan AR Indonesia" src="assets/image/viretra-all2.png" class="mobile">
