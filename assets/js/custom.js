@@ -131,6 +131,18 @@ $(document).ready(function(event) {
 		video.play();
 		video.currentTime = 0;
 	});
+	$('#apModal').on('hide.bs.modal', function(e){
+		const video = document.querySelector("#videoAp");
+
+		video.pause();
+		video.currentTime = 0;
+	});
+	$('#apModal').on('show.bs.modal', function(e){
+		const video = document.querySelector("#videoAp");
+
+		video.play();
+		video.currentTime = 0;
+	});
 });
 function sendMail(){
 	$.support.cors = true
@@ -169,5 +181,10 @@ function sendMail(){
 function viretra(){
 	// console.log('asd');
 	$('#viretraModal').modal('show');
+	return false;
+}
+function angkasapura(){
+	// console.log('asd');
+	$('#apModal').modal('show');
 	return false;
 }

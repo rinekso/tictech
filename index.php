@@ -192,6 +192,7 @@
 			OUR PRODUCT
 		</h1>
 		<section class="slider center">
+			<a href="javascript:void()" onclick="angkasapura()">
 			<div>
 				<img class="desktop" src="assets/image/background-product.png">
 				<img alt="Project Angkasa Pura body tracking gathot kaca dan srikandi oleh Tictech Studio VR dan AR Indonesia" src="assets/image/ap-all2.png" class="mobile">
@@ -205,12 +206,13 @@
 					<img src="assets/image/ap-3.png">
 				</div>
 			</div>
+			</a>
 			<a href="https://play.google.com/store/apps/details?id=com.tictech.kelar" target="_blank">
 				<div>
 					<img class="desktop" src="assets/image/background-product.png">
 					<img alt="Project KELAR untuk majalah KUARK oleh Tictech Studio VR dan AR Indonesia" src="assets/image/kuark-all2.png" class="mobile">
 					<div class="item-slide item-slide-kuark" data-animate=fadeInDown>
-						<img alt="Project KELAR untuk majalah KUARK oleh Tictech Studio VR dan AR Indonesia" src="assets/image/kuark-4.gif">
+						<img alt="Project KELAR untuk majalah KUARK oleh Tictech Studio VR dan AR Indonesia" src="assets/image/kuark-5.gif">
 					</div>
 					<div class="item-slide item-slide-4" data-animate=fadeInDown>
 						<img src="assets/image/kuark-1.png">
@@ -379,6 +381,22 @@
       </div>
 		<video controls width="100%" height="auto" id="videoViretra">
 			<source src="assets/video/viretra.mp4" type="video/mp4">
+		</video>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="apModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">AR Photo Booth</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+		<video controls width="100%" height="auto" id="videoAp">
+			<source src="assets/video/ap.mp4" type="video/mp4">
 		</video>
     </div>
   </div>
