@@ -241,11 +241,10 @@
 				</div>
 			</a>
 		</section>
-<!-- 		<div class="mobile" style="margin-top: 50px;">
-			<a href="#client" class="btn-menu">Client</a>
-			<img src="assets/image/arrow.png" class="arrow">
+		<div class="row">
+			<a href="javascript:void()" onclick="portofolio()" class="portofolio center">Download Portofolio</a>
 		</div>
- -->		<div class="contact-us ss" data-animate=fadeInLeft id="client">
+		<div class="contact-us ss" data-animate=fadeInLeft id="client">
 			<h1 class="tag-line">OUR CLIENTS</h1>
 			<p>
 				We immerse ourselves<br>
@@ -386,6 +385,38 @@
   </div>
 </div>
 <!-- Modal -->
+<div class="modal fade" id="portofolioModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Portofolio</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+		<form action="assets/php/portofolio.php" method="POST">
+			<div class="row">
+				<div class="col-md-6">
+					<input required class="form-control" type="text" name="name" placeholder="Name">
+				</div>
+				<div class="col-md-6">
+					<input required class="form-control" type="email" name="email" placeholder="Email">
+				</div>
+			</div>
+			<br>
+			<div class="clearfix"></div>
+			<div class="row">
+				<div class="col-md-12">
+					<button class="btn btn-menu btn-primary col-12" type="submit">Download</button>
+				</div>
+			</div>
+		</form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
 <div class="modal fade" id="apModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
@@ -411,7 +442,7 @@
         </button>
       </div>
       <div class="modal-body">
-      	<p>Thanks, for your comment ;) </p>
+      	<p>Thanks, for your submit ;) </p>
       </div>
     </div>
   </div>
@@ -433,6 +464,15 @@ if(@$_GET['feedback'] == "1"){
     });
 </script>
         ";
+}elseif(@$_GET['feedback'] == "2"){
+	echo "
+        <script type='text/javascript'>
+    $(window).on('load',function(){
+    	document.location = './assets/pdf/TICTECH-PORTOFOLIO.pdf';
+		// window.open('./assets/pdf/TICTECH-PORTOFOLIO.pdf');
+	});
+	</script>
+	";
 }
 ?>
 </body>

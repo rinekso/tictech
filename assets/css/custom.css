@@ -981,6 +981,17 @@ footer .copyright a{
 .mobile{
 	display: none !important;
 }
+.portofolio{
+	border-radius: 20px;
+	padding: 10px 20px;
+	color: #333;
+	background: url("../image/background-product.png");
+	background-size: 100% 100%;
+	margin: 50px auto;
+}
+.portofolio:hover{
+	color: #333;
+}
 
 
 @media screen and (max-width:1060px){

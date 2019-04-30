@@ -183,6 +183,11 @@ function viretra(){
 	$('#viretraModal').modal('show');
 	return false;
 }
+function portofolio(){
+	// console.log('asd');
+	$('#portofolioModal').modal('show');
+	return false;
+}
 function angkasapura(){
 	// console.log('asd');
 	$('#apModal').modal('show');
