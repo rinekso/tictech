@@ -604,7 +604,7 @@ img.anime.left{
 	position: relative;
 	width: 100%;
 	z-index: 3;
-	height: 1800px;
+	height: auto;
 	margin-top: -300px;
 	background: url("../image/BOTTOM.png") no-repeat;
 	background-position: top;
