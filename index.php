@@ -485,8 +485,7 @@ if(@$_GET['feedback'] == "1"){
 	echo "
         <script type='text/javascript'>
     $(window).on('load',function(){
-    	document.location = './assets/pdf/TICTECH-PORTOFOLIO.pdf';
-		// window.open('./assets/pdf/TICTECH-PORTOFOLIO.pdf');
+        $('#feedback').modal('show');
 	});
 	</script>
 	";
