@@ -31,7 +31,6 @@ $mail->Body =  'Greetings '.$_POST['name'].' from '.$_POST['company'].' ! Here i
 Fandi Alfiansah<br>
 Head of Production<br>
 TicTech Studio<br>';
-$mail->addStringAttachment(file_get_contents("./../pdf/TICTECH-PORTOFOLIO.pdf"), 'TICTECH-PORTOFOLIO.pdf');
 $mail->AddAddress($_POST['email']);
 $mail->Send();
  if(!$mail->Send()) {
