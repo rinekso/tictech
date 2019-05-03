@@ -503,9 +503,9 @@
     function done_func(response) {
         // message.fadeIn()
         // message.html(response);
-        setTimeout(function () {
-            message.fadeOut();
-        }, 5000);
+        // setTimeout(function () {
+        //     message.fadeOut();
+        // }, 5000);
         
         form.find('input:not([type="submit"]), textarea').val('');
     }
@@ -514,9 +514,9 @@
     function fail_func(data) {
         // message.fadeIn()
         // message.html(data.responseText);
-        setTimeout(function () {
-            message.fadeOut(5000);
-        }, 5000);
+        // setTimeout(function () {
+        //     message.fadeOut(5000);
+        // }, 5000);
     }
     
     form.submit(function (e) {
