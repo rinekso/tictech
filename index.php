@@ -423,6 +423,7 @@
 				<div class="col-12">
 					<input required class="form-control" type="email" name="email" placeholder="Email">
 				</div>
+				<br>
 				<div class="col-12">
 					<div class="g-recaptcha" data-sitekey="6Le2jqEUAAAAAAucvdWTZbO3g8uY_MHqPRnRhpmh"></div>
 				</div>
