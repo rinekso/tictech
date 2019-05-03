@@ -18,7 +18,7 @@ $mail->Host = "smtp.gmail.com";
 $mail->Port = 587; // or 587
 $mail->IsHTML(true);
 $mail->Username = "lanius.agni@gmail.com";
-$mail->Password = "onestepahead";
+$mail->Password = "Onestepahead1212";
 $mail->SetFrom("no-reply@tictechstudio.com");
 $mail->Subject = "Anda mendapat message melalui website Tictechstudio.com";
 $mail->Body =   	'Nama : '.$_POST['name'].'<br>'.

@@ -109,13 +109,13 @@
 		<div class="box-container container">
 			<div class="row">
 				<div class="col-md-6 ss" data-offset=300 data-animate=fadeInLeft>
-					<h1 class="title title-1">Augmented Reality</h1>
+					<h1 class="title title-1">Augmented<br>Reality</h1>
 					<p class="box box-1">
-						changing our view of the world by merging our environmental surroundings with digital data and media so you can deliver your messages more interesting and interactive through AR technology.
+						Changing our view of the world by merging our environmental surroundings with digital data and media so you can deliver your messages more interesting and interactive through AR technology.
 					</p>
 				</div>
 				<div class="col-md-6 ss" data-offset=300 data-animate=fadeInRight>
-					<h1 class="title title-2">Virtual Reality</h1>
+					<h1 class="title title-2">Virtual<br>Reality</h1>
 					<p class="box box-2">
 						With the help of software and VR device, you can enhance such an amazing and interactive experience in virtual world, and interact as though things around you are actually there.
 					</p>
@@ -238,6 +238,12 @@
 					<div class="item-slide item-slide-9" data-animate=fadeInUp>
 						<img src="assets/image/viretra-2.png">
 					</div>
+				</div>
+			</a>
+			<a href="./ayaskara">
+				<div>
+					<img class="desktop" src="assets/image/slide/9.jpg">
+					<img alt="Project Fire training oleh Tictech Studio VR dan AR Indonesia" src="assets/image/slide/9.jpg" class="mobile">
 				</div>
 			</a>
 		</section>
@@ -370,7 +376,7 @@
 	</footer>
 <!-- Modal -->
 <div class="modal fade" id="viretraModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
+  <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">VIRETRA</h5>
@@ -386,7 +392,7 @@
 </div>
 <!-- Modal -->
 <div class="modal fade" id="portofolioModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
+  <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">Portofolio</h5>
@@ -397,10 +403,21 @@
       <div class="modal-body">
 		<form action="assets/php/portofolio.php" method="POST">
 			<div class="row">
+				<div class="col-md-12">
+					<p>Thank you for interested in us, we can tell you more detail by giving you our portfolio. However, please fill this information first.</p>
+				</div>
+			</div>
+			<div class="row">
 				<div class="col-md-6">
 					<input required class="form-control" type="text" name="name" placeholder="Name">
 				</div>
 				<div class="col-md-6">
+					<input required class="form-control" type="text" name="company" placeholder="Company/Organization">
+				</div>
+			</div>
+			<br>
+			<div class="row">
+				<div class="col-md-12">
 					<input required class="form-control" type="email" name="email" placeholder="Email">
 				</div>
 			</div>
@@ -408,7 +425,7 @@
 			<div class="clearfix"></div>
 			<div class="row">
 				<div class="col-md-12">
-					<button class="btn btn-menu btn-primary col-12" type="submit">Download</button>
+					<button class="btn btn-menu btn-primary col-12" type="submit">Send</button>
 				</div>
 			</div>
 		</form>
@@ -418,7 +435,7 @@
 </div>
 <!-- Modal -->
 <div class="modal fade" id="apModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
+  <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">AR Photo Booth</h5>
@@ -433,7 +450,7 @@
   </div>
 </div>
 <div class="modal fade" id="feedback" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog" role="document">
+  <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="exampleModalLabel">THANKS!!!</h5>
@@ -442,7 +459,7 @@
         </button>
       </div>
       <div class="modal-body">
-      	<p>Thanks, for your submit ;) </p>
+      	<p>Thank you for your information, our portfolio has been sent to your email.</p>
       </div>
     </div>
   </div>

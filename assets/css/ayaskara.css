@@ -1,0 +1,298 @@
+body, html{
+	margin: 0;
+	padding: 0;
+}
+body{
+	height: 100vh;
+	background: url("../image/ayaskara/background.png") no-repeat bottom;
+	background-position: fixed;
+	background-size: 100% auto;
+	font-family: "Book Antiqua";
+}
+body.story{
+	background: url("../image/ayaskara/background-story.png") no-repeat;
+	background-position: 0 120px; 
+	background-size: 100% auto;
+}
+body.features{
+	background: url("../image/ayaskara/background-features.jpg") no-repeat top center;
+	background-position: 0 120px; 
+	background-size: 100% 2000px;
+	height: auto;
+}
+body.character{
+	background: url("../image/ayaskara/background-char.jpg") no-repeat;
+	background-position: bottom;
+	background-size: 100% auto;
+	height: 100vh;
+}
+.character h1.title{
+	margin-bottom: 50px;
+}
+.char-select{
+	background: url("../image/ayaskara/char-select.png") no-repeat top;
+	background-size: 100% auto;
+	width: 100%;
+	position: relative;
+	z-index: 3;
+}
+.highlight{
+	width: 49%;
+	opacity: 0;
+	cursor: pointer;
+	z-index: 5;
+	display: inline;
+}
+.character .t{
+	width: 250px;
+	padding: 0;
+	height: auto;
+	margin: auto;
+	text-align: center;
+	float: inherit;
+	margin-top: -30px;
+}
+.title-char{
+	font-size: 20px;
+	font-weight: bolder;
+	position: absolute;
+	left: 0;
+	right: 0;
+	color: #53352e;
+	/*width: 100%;*/
+}
+.align-center{
+	text-align: center !important;
+}
+.container-char{
+	background: url("../image/ayaskara/shape.png") no-repeat center;
+	background-size: 100% 100%;
+	width: 100%;
+	padding: 0 20px;
+	height: auto;
+	margin-top: -20px;
+}
+.container-char img{
+	width: 100%;
+	height: auto;
+}
+.container-des{
+	background: url("../image/ayaskara/describe-char.png") no-repeat center;
+	background-size: 100% 100%;
+	width: 100%;
+	padding: 50px 60px;
+	height: 300px;
+	font-weight: bolder;
+	margin-top: -30px;
+	color: #53352e;
+}
+header{
+	background: url("../image/ayaskara/background-header.png") no-repeat top;
+	background-size: 100% 100%;
+	height: 120px;
+	padding: 0;
+	margin: 0;
+}
+header .menu{
+	width: 70%;
+	background: url("../image/ayaskara/menu.png") no-repeat top;
+	background-size: 100% auto;
+	height: 110px;
+	top: 0;
+	left: 0;
+	right: 0;
+	margin: auto;
+	position: absolute;
+}
+.logo{
+	width: 170px;
+	height: 170px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.menu ul{
+	width: 90%;
+	margin: auto;
+	padding: 0;
+	padding-top: 35px;
+	text-align: center;
+}
+.menu ul li{
+	display: inline-block;
+	color: #63453e;
+	font-weight: bolder;
+	font-size: 30px;
+	width: 100%;
+	position: relative;
+}
+.menu ul a{
+	display: inline-block;
+	padding: 0 20px;
+	min-width: 120px;
+	width: auto;
+}
+.menu ul li:after{
+	position: absolute;
+	content: "";
+	background: url("../image/ayaskara/selected.png") no-repeat bottom;
+	background-size: 120px auto;
+	width: 100%;
+	height: 50px;
+	margin-top: -40px;
+	right: 0;
+	left: 0;
+	display: none;
+}
+.menu ul a:hover li:after{
+	display: block;
+}
+.menu ul li.active:after{
+	display: block;
+}
+.container{
+	padding-top: 120px;
+}
+h1, h2{
+	text-shadow: rgba(217,170,150,1) 0px 0px 30px, rgba(217,170,150,1) 0px 0px 30px, rgba(217,170,150,1) 0px 0px 30px;
+}
+body.features h2{
+	text-align: left;
+	text-indent: -50px;
+	font-size: 40px;
+}
+.features .item{
+	width: 100%;
+	height: 450px;
+	padding: 100px 0;
+	display: block;
+	margin-bottom: 160px;
+}
+.features .item img{
+	width: 50%;
+}
+.features .text p{
+	font-size: 24px;
+	margin-top: 30px;
+	margin-left: -25px;
+	font-weight: bolder;
+}
+.features .item:nth-child(even) img{
+	float: left;
+}
+.features .item:nth-child(even) .text{
+	float: right;
+	margin: auto;
+	margin-top: 50px;
+	margin-right: 150px;
+}
+.features .item:nth-child(odd) img{
+	float: right;
+}
+.features .item:nth-child(odd) .text{
+	float: left;
+	margin-left: 100px;
+}
+.features .item:nth-child(odd) .text p{
+	margin-left: 60px;
+}
+.features footer img{
+	width: 30px;
+	margin-right: 20px;
+	height: auto;
+}
+.features footer{
+	margin-bottom: 20px;
+	background: none;
+}
+h2{
+	text-align: center;
+	font-size: 28px;
+	font-weight: bolder;
+	color: #53352e;
+}
+h1.title{
+	margin: auto;
+	font-size: 34px !important;
+	height: auto;
+	font-weight: bolder;
+	text-align: center;
+	color: #53352e;
+}
+.story h1.title{
+	margin-bottom: 50px !important;
+}
+.title:before{
+	background: url("../image/ayaskara/title1-back.png") no-repeat center;
+	background-size: 100% auto;
+	width: 35px;
+	height: 50px;
+	margin-top: -5px;
+	margin-left: -40px;
+	content: "";
+	position: absolute;
+}
+.title:after{
+	background: url("../image/ayaskara/title2-back.png") no-repeat center;
+	background-size: 100% auto;
+	width: 35px;
+	height: 50px;
+	margin-top: -3px;
+	margin-left: 5px;
+	content: "";
+	position: absolute;
+}
+.story p{
+	width: 500px;
+	margin: auto;
+	text-align: center;
+	font-size: 20px;
+	color: #3a2116;
+	font-weight: bolder;
+	text-shadow: rgba(217,170,150,1) 0px 0px 30px, rgba(217,170,150,1) 0px 0px 30px, rgba(217,170,150,1) 0px 0px 30px;
+}
+.story h2{
+	font-size: 28px;
+	margin-bottom: 20px !important;
+}
+.video{
+	background: url("../image/ayaskara/background-video.png") no-repeat center;
+	background-size: 100% 100%;
+	width: 50%;
+	padding: 25px;
+	margin: auto;
+	margin-top: 20px;
+}
+.video .content{
+	width: 100%;
+	height: auto;
+	display: block;
+}
+.video .content iframe{
+	width: 100%;
+	height: 300px;
+}
+.video .content img{
+	width: 100%;
+	height: auto;
+}
+.download{
+	text-align: center;
+}
+.download a{
+	width: 150px;
+	height: auto;
+	display: inline-block;
+	margin: 10px;
+}
+.download a img{
+	width: 100%;
+	height: auto;
+}
+@media screen and (min-width: 576px){
+	.container {
+		max-width: 1140px !important;
+		width: 1140px !important;
+		min-width: 1140px !important;
+	}
+}
