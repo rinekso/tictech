@@ -502,7 +502,7 @@
     // Success function
     function done_func(response) {
         // message.fadeIn()
-        // message.html(response);
+        console.log(response);
         // setTimeout(function () {
         //     message.fadeOut();
         // }, 5000);
@@ -513,7 +513,7 @@
     // fail function
     function fail_func(data) {
         // message.fadeIn()
-        // message.html(data.responseText);
+        console.log(data.responseText);
         // setTimeout(function () {
         //     message.fadeOut(5000);
         // }, 5000);
