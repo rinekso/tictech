@@ -36,6 +36,8 @@
 	<link rel="stylesheet" type="text/css" href="assets/plugins/slick-1.8.1/slick/slick-theme.css">
 <!-- Plugin slide -->
 	<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
+<!-- google recaptcha -->
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -323,6 +325,7 @@
 						<input required class="form-control" type="text" name="name" placeholder="Name">
 						<input required class="form-control" type="email" name="email" placeholder="Email">
 						<textarea required class="form-control" name="comment" placeholder="Comment"></textarea>
+						<div class="g-recaptcha" data-sitekey="6Le2jqEUAAAAAAucvdWTZbO3g8uY_MHqPRnRhpmh"></div>
 						<button type="submit">SEND</button>
 					</form>
 				</div>
@@ -417,8 +420,11 @@
 			</div>
 			<br>
 			<div class="row">
-				<div class="col-md-12">
+				<div class="col-12">
 					<input required class="form-control" type="email" name="email" placeholder="Email">
+				</div>
+				<div class="col-12">
+					<div class="g-recaptcha" data-sitekey="6Le2jqEUAAAAAAucvdWTZbO3g8uY_MHqPRnRhpmh"></div>
 				</div>
 			</div>
 			<br>
