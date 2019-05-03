@@ -33,12 +33,7 @@ Head of Production<br>
 TicTech Studio<br>';
 $mail->AddAddress($_POST['email']);
 $mail->Send();
- if(!$mail->Send()) {
-  // echo $mail->Body;
-  //   echo "<br> Mailer Error: " . $mail->ErrorInfo;
- } else {
- }
-    header('location:../../.?feedback=2');
+header('location:../../.?feedback=2');
  /*
 $transport = Swift_SmtpTransport::newInstance('smtp.gmail.com', 465, "ssl")
   ->setUsername('reyno33333@gmail.com')
