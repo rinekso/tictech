@@ -18,12 +18,6 @@
 
   <link rel="stylesheet" href="../../assets/plugins/pace-1.0.2/themes/blue/pace-theme-center-simple.css" />
 
-  <script>
-    paceOptions = {
-      elements: true
-    };
-  </script>
-  <script src="../../assets/plugins/pace-1.0.2/pace.min.js"></script>
 
 	<link rel="stylesheet" type="text/css" href="../../assets/plugins/bootstrap/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="../../assets/css/font.css">

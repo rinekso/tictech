@@ -250,7 +250,7 @@
 			</a>
 		</section>
 		<div class="row">
-			<a href="javascript:void()" onclick="portofolio()" class="portofolio center">Download Portofolio</a>
+			<a href="javascript:void()" onclick="portofolio()" class="portofolio center">Download Portfolio</a>
 		</div>
 		<div class="contact-us ss" data-animate=fadeInLeft id="client">
 			<h1 class="tag-line">OUR CLIENTS</h1>
@@ -326,6 +326,7 @@
 						<input required class="form-control" type="email" name="email" placeholder="Email">
 						<textarea required class="form-control" name="comment" placeholder="Comment"></textarea>
 						<div class="g-recaptcha" data-sitekey="6Le2jqEUAAAAAAucvdWTZbO3g8uY_MHqPRnRhpmh"></div>
+						<br>
 						<button type="submit">SEND</button>
 					</form>
 				</div>
@@ -373,7 +374,7 @@
 		<div class="copyright">
 			<div class="row">
 				<div class="col-6 align-right">All right reserved</div>
-				<div class="col-6 align-left"><a href="https://www.linkedin.com/company/lanius-labs" target="_blank">&copy; 2019 Lanius innovation lab</a></div>
+				<div class="col-6 align-left"><a href="https://www.linkedin.com/company/lanius-labs" target="_blank">&copy; 2019 TicTech Studio</a></div>
 			</div>
 		</div>
 	</footer>
@@ -398,7 +399,7 @@
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Portofolio</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Portfolio</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -423,7 +424,9 @@
 				<div class="col-12">
 					<input required class="form-control" type="email" name="email" placeholder="Email">
 				</div>
-				<br>
+			</div>
+			<br>
+			<div class="row">
 				<div class="col-12">
 					<div class="g-recaptcha" data-sitekey="6Le2jqEUAAAAAAucvdWTZbO3g8uY_MHqPRnRhpmh"></div>
 				</div>
