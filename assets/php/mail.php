@@ -34,7 +34,7 @@ if(intval($responseKeys["success"]) !== 1) {
   $mail->Body =   	'Nama : '.$_POST['name'].'<br>'.
     	'Email : '.$_POST['email'].'<br>'.
     	'Pesan : '.$_POST['comment'].'<br>';
-  $mail->AddAddress("reyno33333@gmail.com");
+  $mail->AddAddress("agammail95@gmail.com");
   $mail->Send();
    if(!$mail->Send()) {
     // echo $mail->Body;
