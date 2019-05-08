@@ -34,8 +34,8 @@ if(intval($responseKeys["success"]) !== 1) {
   $mail->Username = "lanius.agni@gmail.com";
   $mail->Password = "Onestepahead1212";
   $mail->SetFrom("no-reply@tictechstudio.com");
-  $mail->Subject = "Portfolio of Tictech";
-  $mail->Body =  'Greetings '.$_POST['name'].' from '.$_POST['company'].' ! Here is link to download our portfolio: <a href="http://tictechstudio.com/download.php">Download Portfolio</a>. Whoever you are, we hope to collaborate in creating a masterpiece project with you in the future. You can check our contact list in our portfolio, so, please feel free to consult with us. we look forward to hearing from you in the future!<br>
+  $mail->Subject = "Portflio of Tictech";
+  $mail->Body =  'Greetings '.$_POST['name'].' from '.$_POST['company'].' !<br>Here is link to download our portfolio: <a href="http://tictechstudio.com/download.php">Download Portfolio</a>. Whoever you are, we hope to collaborate in creating a masterpiece project with you in the future. You can check our contact list in our portfolio, so, please feel free to consult with us. We look forward to hearing from you in the future!<br>
   <br>
   Fandi Alfiansah<br>
   Head of Production<br>
