@@ -36,11 +36,6 @@ if(intval($responseKeys["success"]) !== 1) {
     	'Pesan : '.$_POST['comment'].'<br>';
   $mail->AddAddress("agammail95@gmail.com");
   $mail->Send();
-   if(!$mail->Send()) {
-    // echo $mail->Body;
-    //   echo "<br> Mailer Error: " . $mail->ErrorInfo;
-   } else {
-   }
       header('location:../../.?feedback=1');
 }
  /*
