@@ -103,7 +103,7 @@
 	</div>
 	<section id="content" class="container">
 		<div class="quote ss" data-animate="fadeInUp" data-offset=300>
-			<h1>We believe</h1>
+			<h1>WE BELIEVE</h1>
 			<p>
 				that visualization is everything<br>and visual can be the most effective way<br>to communicate the value.
 			</p>
@@ -111,13 +111,13 @@
 		<div class="box-container container">
 			<div class="row">
 				<div class="col-md-6 ss" data-offset=300 data-animate=fadeInLeft>
-					<h1 class="title title-1">Augmented<br>Reality</h1>
+					<h1 class="title title-1">AUGMENTED<br>REALITY</h1>
 					<p class="box box-1">
 						Changing our view of the world by merging our environmental surroundings with digital data and media so you can deliver your messages more interesting and interactive through AR technology.
 					</p>
 				</div>
 				<div class="col-md-6 ss" data-offset=300 data-animate=fadeInRight>
-					<h1 class="title title-2">Virtual<br>Reality</h1>
+					<h1 class="title title-2">VIRTUAL<br>REALITY</h1>
 					<p class="box box-2">
 						With the help of software and VR device, you can enhance such an amazing and interactive experience in virtual world, and interact as though things around you are actually there.
 					</p>
@@ -244,7 +244,7 @@
 			</a>
 			<a href="./ayaskara">
 				<div>
-					<img class="desktop" src="assets/image/slide/9.jpg">
+					<img class="desktop" src="assets/image/slide/Ayaskara.png">
 					<img alt="Project Fire training oleh Tictech Studio VR dan AR Indonesia" src="assets/image/slide/9.jpg" class="mobile">
 				</div>
 			</a>
@@ -448,7 +448,7 @@
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">AR Photo Booth</h5>
+        <h5 class="modal-title" id="exampleModalLabel">Interactive AR Game & Photobooth</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>

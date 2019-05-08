@@ -471,7 +471,7 @@ img.anime.left{
 	color: #fff;
 	text-align: center;
 	font-size: 22px;
-	padding-top: 20px;
+	padding-top: 25px;
 }
 .box-1{
 	background: url("../image/box1.png") no-repeat center;
@@ -921,32 +921,32 @@ footer .copyright a{
 .item-slide-1{
 	width: 45%;
 	top: -20px;
-	left: 10%;
+	right: 0%;
 }
 .item-slide-2{
-	width: 45%;
-	top: 40px;
-	right: 10%;
+	width: 40%;
+	top: 80px;
+	left: 10%;
 }
 .item-slide-3{
-	width: 40%;
-	bottom: 50px;
-	right: 12%;
+	width: 20%;
+	bottom: 70px;
+	left: 20%;
 }
 .item-slide-4{
-	width: 45%;
+	width: 41%;
 	top: -20px;
-	left: 0;
+	right: 20px;
 }
 .item-slide-5{
 	width: 45%;
 	top: 40px;
-	left: 35%;
+	left: 5%;
 }
 .item-slide-6{
-	width: 40%;
-	bottom: 100px;
-	left:37%;
+	width: 50%;
+	bottom: 60px;
+	left: 4%;
 }
 .item-slide-7{
 	width: 50%;
@@ -964,9 +964,9 @@ footer .copyright a{
 	right:5%;
 }
 .item-slide-kuark{
-	width: 22%;
-	top: 40px;
-	left: 11%;
+	width: 19.5%;
+	top: 35px;
+	right: 13.5%;
 	position: absolute;
 	height: auto;
 }
