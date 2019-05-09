@@ -6,24 +6,25 @@ body{
 	height: 100vh;
 	background: url("../image/ayaskara/background.png") no-repeat bottom;
 	background-position: fixed;
-	background-size: 100% auto;
+	background-size: 1366px auto;
 	font-family: "Book Antiqua";
+	min-width: 1366px;
 }
 body.story{
 	background: url("../image/ayaskara/background-story.png") no-repeat;
 	background-position: 0 120px; 
-	background-size: 100% auto;
+	background-size: 1366px auto;
 }
 body.features{
 	background: url("../image/ayaskara/background-features.jpg") no-repeat top center;
 	background-position: 0 120px; 
-	background-size: 100% 2000px;
+	background-size: 1366px 2000px;
 	height: auto;
 }
 body.character{
 	background: url("../image/ayaskara/background-char.jpg") no-repeat;
 	background-position: bottom;
-	background-size: 100% auto;
+	background-size: 1366px auto;
 	height: 100vh;
 }
 .character h1.title{
@@ -304,7 +305,12 @@ h1.title{
 	width: 100%;
 	height: auto;
 }
-@media screen and (min-width: 576px){
+@media screen and (min-width: 400px){
+	body{
+		max-width: 1366px !important;
+		width: 1366px !important;
+		min-width: 1366px !important;
+	}
 	.container {
 		max-width: 1140px !important;
 		width: 1140px !important;
