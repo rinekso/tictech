@@ -610,6 +610,13 @@ img.anime.left{
 	background-position: top;
 	background-size: 100% auto;
 	text-align: center;
+	margin-bottom: 0;
+}
+#product{
+	padding-top: 50px;
+}
+.slick-dot{
+	display: none;
 }
 h1.tag-line{
 	font-family: "Frostbite-narrow";
@@ -676,7 +683,7 @@ h1.tag-line:before{
 .contact-us{
 	margin: auto;
 	position: relative;
-	margin-top: 0px;
+	margin-top: 50px;
 	width: 1000px;
 	min-height: 400px;
 	background: url("../image/contact-us.png") no-repeat left;
@@ -863,10 +870,10 @@ footer .copyright a{
 
 /*slider*/
 .slider {
-    width: 70%;
+    width: 60%;
     margin: auto;
     height: auto;
-    margin-top: 500px;
+    margin-top: 400px;
 }
 
 .slick-slide {
@@ -988,6 +995,11 @@ footer .copyright a{
 	background: url("../image/background-product.png");
 	background-size: 100% 100%;
 	margin: 50px auto;
+	margin-bottom: 200px;
+	margin-top: -50px;
+	position: relative;
+	width: 200px;
+	display: block;
 }
 .portofolio:hover{
 	color: #333;

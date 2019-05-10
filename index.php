@@ -245,13 +245,12 @@
 			<a href="./ayaskara">
 				<div>
 					<img class="desktop" src="assets/image/slide/Ayaskara.png">
-					<img alt="Project Fire training oleh Tictech Studio VR dan AR Indonesia" src="assets/image/slide/9.jpg" class="mobile">
+					<img alt="Project Fire training oleh Tictech Studio VR dan AR Indonesia" src="assets/image/slide/Ayaskara.jpg" class="mobile">
 				</div>
 			</a>
 		</section>
-		<div class="row">
-			<a href="javascript:void()" onclick="portofolio()" class="portofolio center">Download Portfolio</a>
-		</div>
+		<a href="javascript:void()" onclick="portofolio()" class="portofolio center">Download Portfolio</a>
+
 		<div class="contact-us ss" data-animate=fadeInLeft id="client">
 			<h1 class="tag-line">OUR CLIENTS</h1>
 			<p>
