@@ -8,7 +8,6 @@ body{
 	background-position: fixed;
 	background-size: 1366px auto;
 	font-family: "Book Antiqua";
-	min-width: 1366px;
 }
 body.story{
 	background: url("../image/ayaskara/background-story.png") no-repeat;
