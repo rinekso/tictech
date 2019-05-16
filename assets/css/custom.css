@@ -870,7 +870,7 @@ footer .copyright a{
 
 /*slider*/
 .slider {
-    width: 60%;
+    width: 65%;
     margin: auto;
     height: auto;
     margin-top: 400px;
@@ -937,7 +937,7 @@ footer .copyright a{
 }
 .item-slide-3{
 	width: 20%;
-	bottom: 70px;
+	bottom: 40px;
 	left: 20%;
 }
 .item-slide-4{
