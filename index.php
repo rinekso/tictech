@@ -333,8 +333,7 @@
 					<h2>GET IN TOUCH</h2>
 					<ul class="info">
 						<li><img src="assets/image/icon-mail.png" class="icon"> <span>info@tictechstudio.com</span></li>
-						<li><img src="assets/image/icon-phone.png" class="icon"> <span>+62 87878103333 (Phone/SMS)</span></li>
-						<li><img src="assets/image/icon-phone.png" class="icon"> <span>+62 87839575573 (Whatsapp/LINE)</span></li>
+						<li><img src="assets/image/icon-phone.png" class="icon"> <span>+62 81235291705 (Phone/SMS/Whatsapp/LINE)</span></li>
 						<li><img src="assets/image/icon-loc.png" class="icon"> 
 							<p>Lanius Labs<br>
 							Jl. Dr. Ir. Soekarno No. 487<br>
