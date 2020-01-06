@@ -60,7 +60,7 @@
 	<div class="video">
 		<div class="content">
 			<!-- <img src="../assets/image/ayaskara/thumb-video.png"> -->
-			<iframe src="https://www.youtube.com/embed/96gownZh1Lo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			<iframe src="https://www.youtube.com/embed/GuQrDP4ZjKo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 		</div>
 	</div>
 	<div class="download">

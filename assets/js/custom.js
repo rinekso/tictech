@@ -122,14 +122,14 @@ $(document).ready(function(event) {
 	$('#viretraModal').on('hide.bs.modal', function(e){
 		const video = document.querySelector("#videoViretra");
 
-		video.pause();
-		video.currentTime = 0;
+		// video.pause();
+		// video.currentTime = 0;
 	});
 	$('#viretraModal').on('show.bs.modal', function(e){
 		const video = document.querySelector("#videoViretra");
 
-		video.play();
-		video.currentTime = 0;
+		// video.play();
+		// video.currentTime = 0;
 	});
 	$('#apModal').on('hide.bs.modal', function(e){
 		const video = document.querySelector("#videoAp");

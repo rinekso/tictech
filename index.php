@@ -3,14 +3,14 @@
 <head>
 <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-132734580-2"></script>
-<script>
+<!-- <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
   gtag('config', 'UA-132734580-2');
 </script>
-	<title>Tictech | Studio VR & AR Indonesia</title>
+ -->	<title>Tictech | Studio VR & AR Indonesia</title>
 	<meta name="description" lang="indonesia" content="Tictech Studio merupakan software house yang bergerak dalam bidang VR (Virtual Reality) dan AR (Augmented Reality) di Indonesia. Kami mengerjakan beberapa proyek besar dalam visualisasi dan teknologi berbasis AR maupun VR. Setiap aplikasi VR dan AR dapat dikembangkan di sini. Tictech Studio.">
 	<meta name="description" content="Tictech Studio is a software house that is engaged in VR (Virtual Reality) and AR (Augmented Reality) in Indonesia. We are working on several major projects in visualization and AR-based and VR-based technology. Every VR and AR application can be developed here. Tictech Studio." lang="english">
 	<meta name="keywords" content="AR, VR, AR & VR, AR VR Indonesia, Teknologi AR, Teknologi VR, VR Indonesia, AR Indonesia, Surabaya, Indonesia, Startup, Teknologi, Industri 4.0, 4.0, Game, Game Indie, Indie, Developer Game, Developer, Augmented Reality, Virtual Reality, Augmented Reality Virtual Reality Indonesia">
@@ -245,7 +245,7 @@
 			<a href="./ayaskara">
 				<div>
 					<img class="desktop" src="assets/image/slide/Ayaskara.png">
-					<img alt="Project Fire training oleh Tictech Studio VR dan AR Indonesia" src="assets/image/slide/Ayaskara.jpg" class="mobile">
+					<img alt="Project Fire training oleh Tictech Studio VR dan AR Indonesia" src="assets/image/slide/Ayaskara.png" class="mobile">
 				</div>
 			</a>
 		</section>
@@ -377,7 +377,7 @@
 		</div>
 	</footer>
 <!-- Modal -->
-<div class="modal fade" id="viretraModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal" id="viretraModal" tabindex="1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -386,9 +386,10 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-		<video controls width="100%" height="auto" id="videoViretra">
+		<iframe height="400" src="https://www.youtube.com/embed/vc677ofeTeA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<!-- 		<video controls width="100%" height="auto" id="videoViretra">
 			<source src="assets/video/viretra.mp4" type="video/mp4">
-		</video>
+		</video> -->
     </div>
   </div>
 </div>
