@@ -1,0 +1,4 @@
+akses halaman server web tictech:
+host : 66.42.59.115
+username : root
+password : =P4n+gV2AG_*zhCa
