@@ -1,4 +1,6 @@
 <?php
+echo $_FILES['file']['name'];
+/*
 if(!empty(@$_FILES['file']['name'])){
 	$file = $_FILES['file'];
 	$name = $file['name'];
@@ -15,4 +17,5 @@ if(!empty(@$_FILES['file']['name'])){
 	// phpinfo();
 	echo "there is no file to upload";
 }
+*/
 ?>
