@@ -8,7 +8,7 @@ if(!empty(@$_FILES['file']['name'])){
 	$name = $rand.".".$ext;
 	$r = move_uploaded_file($_FILES['file']['tmp_name'], 'storage/'.$name);
 	if($r)
-		echo $_SERVER['SERVER_NAME']."/photo/storage/".$name;
+		echo "https://".$_SERVER['SERVER_NAME']."/photo/storage/".$name;
 	else
 		echo "nope, somethings wrong";
 }else{
