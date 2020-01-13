@@ -12,7 +12,7 @@ if(!empty(@$_FILES['file']['name'])){
 	else
 		echo "nope, somethings wrong";
 }else{
-	phpinfo();
-	// echo "there is no file to upload";
+	// phpinfo();
+	echo "there is no file to upload";
 }
 ?>
