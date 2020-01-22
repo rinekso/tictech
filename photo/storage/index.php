@@ -2,11 +2,11 @@
 <html>
 <head>
    <meta charset="UTF-8">
-   <link rel="shortcut icon" href="./.favicon.ico">
+   <link rel="shortcut icon" href="./favicon.ico">
    <title>Directory Contents</title>
 
-   <link rel="stylesheet" href="./.style.css">
-   <script src="./.sorttable.js"></script>
+   <link rel="stylesheet" href="./style.css">
+   <script src="./sorttable.js"></script>
 </head>
 
 <body>
@@ -134,6 +134,8 @@
 		}
 
 	// Output
+	$extn=pathinfo($dirArray[$index], PATHINFO_EXTENSION);
+	if($extn == "jpg")
 	 echo("
 	 	<a class='item' target='_blank' href='./$namehref'$favicon><img src='./$namehref'/></a>
 ");
