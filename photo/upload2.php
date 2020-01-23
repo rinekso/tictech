@@ -23,7 +23,7 @@ if(!empty(@$_FILES['file']['name'])){
 
 	// Sorts files
 	sort($dirArray);
-	echo json_encode($dirArray);
+	// echo json_encode($dirArray);
 
 	if($indexCount == 0)
 		$name = "NyayataXTictechPhotobooth-0.jpg";
