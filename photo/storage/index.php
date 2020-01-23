@@ -50,7 +50,19 @@
 	$indexCount=count($dirArray);
 
 	// Sorts files
-	sort($dirArray);
+	// sort($dirArray);
+usort($dirArray, function ($a, $b) {
+
+    preg_match("/(\d+(?:-\d+)*)/", $a, $matches);
+    $firstimage = $matches;
+    preg_match("/(\d+(?:-\d+)*)/", $b, $matches);
+    $lastimage = $matches;
+
+    if ($firstimage == $lastimage) {
+        return 0;
+    }
+    return ($firstimage < $lastimage) ? -1 : 1;
+});
 
 	// Loops through the array of files
 	for($index=0; $index < $indexCount; $index++) {

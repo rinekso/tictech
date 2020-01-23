@@ -8,7 +8,7 @@ if(!empty(@$_FILES['file']['name'])){
 	$name = $rand.".".$ext;
 
 	// Opens directory
-	$myDirectory=opendir("storage/");
+	$myDirectory=opendir("storage2/");
 
 	// Gets each entry
 	while($entryName=readdir($myDirectory)) {
@@ -23,6 +23,7 @@ if(!empty(@$_FILES['file']['name'])){
 
 	// Sorts files
 	sort($dirArray);
+	echo json_encode($dirArray);
 
 	if($indexCount == 0)
 		$name = "NyayataXTictechPhotobooth-0.jpg";
