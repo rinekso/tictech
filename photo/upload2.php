@@ -28,7 +28,7 @@ if(!empty(@$_FILES['file']['name'])){
 		$name = "NyayataXTictechPhotobooth-0.jpg";
 	else
 		$name = "NyayataXTictechPhotobooth-".($indexCount-7).".jpg";
-	$r = move_uploaded_file($_FILES['file']['tmp_name'], 'storage/'.$name);
+	$r = move_uploaded_file($_FILES['file']['tmp_name'], 'storage2/'.$name);
 	if($r)
 		echo "https://".$_SERVER['SERVER_NAME']."/photo/storage2/";
 	else
