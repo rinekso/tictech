@@ -68,7 +68,7 @@ usort($dirArray, function ($a, $b) {
 	if(empty($page)){
 		$page = 1;
 	}
-	$limit = 2;
+	$limit = 15;
 	$offest = $limit*($page-1);
 	$index = $offest;
 	// Loops through the array of files
