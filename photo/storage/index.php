@@ -61,11 +61,21 @@ usort($dirArray, function ($a, $b) {
     if ($firstimage == $lastimage) {
         return 0;
     }
-    return ($firstimage < $lastimage) ? -1 : 1;
+    return ($firstimage > $lastimage) ? -1 : 1;
 });
 
+	$page=@$_GET['page'];
+	if(empty($page)){
+		$page = 1;
+	}
+	$limit = 2;
+	$offest = $limit*($page-1);
+	$index = $offest;
 	// Loops through the array of files
-	for($index=0; $index < $indexCount; $index++) {
+	while($index < $offest+$limit) {
+		if($index >= count($dirArray)-8){
+			break;
+		}
 
 	// Decides if hidden files should be displayed, based on query above.
 	    if(substr("$dirArray[$index]", 0, 1)!=$hide) {
@@ -148,6 +158,7 @@ usort($dirArray, function ($a, $b) {
 	// Output
 	$extn=pathinfo($dirArray[$index], PATHINFO_EXTENSION);
 	if($extn == "jpg")
+		$index++;
 	 echo("
 	 	<a class='item' target='_blank' href='./$namehref'$favicon><img src='./$namehref'/></a>
 ");
@@ -155,7 +166,24 @@ usort($dirArray, function ($a, $b) {
 	}
 	?>
 
-	<!-- <h2><?php echo("<a href='$ahref'>$atext hidden files</a>"); ?></h2> -->
+<table width="100%" border="0"><tr><td></td></tr></table><br /><br />
+
+<center>
+<?php
+$count=count($dirArray)-8;
+$jml=ceil($count/$limit);
+for($u=1;$u<=$jml;$u++){
+	if($u==$page){
+		$cl="p_s";
+	}else{
+		$cl="p";
+	}
+?>
+<a href=".?page=<?php echo $u;?>" class="<?php echo $cl;?>"><?php echo $u;?></a>
+<?php }?>
+</center>
+<table width="100%" border="0"><tr><td></td></tr></table><br /><br />
+
 </div>
 </body>
 </html>

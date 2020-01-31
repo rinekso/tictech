@@ -161,3 +161,19 @@ table tr td:first-of-type a[href$=".js"]
 /* directories */
 table tr.dir td:first-of-type a
 {background-image: url(./.images/folder.png);}
+
+.p{
+	padding: 10px;
+	display: inline-block;
+	background: #333;
+	color: #fff;
+}
+.p:hover{
+	background: #222;
+}
+.p_s{
+	padding: 10px;
+	display: inline-block;
+	color: #fff;
+	background: #aaa;
+}
