@@ -25,9 +25,9 @@ if(!empty(@$_FILES['file']['name'])){
 	sort($dirArray);
 
 	if($indexCount == 0)
-		$name = "Photobooth-0.jpg";
+		$name = "Photo-0.jpg";
 	else
-		$name = "Photobooth-".($indexCount-7).".jpg";
+		$name = "Photo-".($indexCount-7).".jpg";
 	$r = move_uploaded_file($_FILES['file']['tmp_name'], 'storage/'.$name);
 	if($r)
 		echo "https://".$_SERVER['SERVER_NAME']."/photo/storage/";
