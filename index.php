@@ -248,8 +248,12 @@
 		    		<input type="text" class="form-control" name="name" placeholder="Name">
 		    		<input type="email" class="form-control" name="email" placeholder="Email">
 		    		<textarea class="form-control" name="comment" placeholder="Comment"></textarea>
-
- 					<div class="g-recaptcha" data-sitekey="6LcZkOMUAAAAAH9e2sGPCAw07JXDtnEu9ZQp0ds8"></div>
+        <?php
+          require_once('recaptchalib.php');
+          $publickey = "6LcZkOMUAAAAAH9e2sGPCAw07JXDtnEu9ZQp0ds8"; // you got this from the signup page
+          echo recaptcha_get_html($publickey);
+        ?>
+ 					<!-- <div class="g-recaptcha" data-sitekey="6LcZkOMUAAAAAH9e2sGPCAw07JXDtnEu9ZQp0ds8"></div> -->
 		    		<button class="btn btn-primary" type="submit">Send</button>
 		    	</form>
 	    	</div>
