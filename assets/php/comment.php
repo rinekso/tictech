@@ -2,7 +2,7 @@
 use PHPMailer\PHPMailer\PHPMailer;
 require '../plugins/vendor/autoload.php';
 
-$secretKey = '6Le2jqEUAAAAAGLL4CxwX8BTZ-_OlSn6SKfOl2x0';
+$secretKey = '6LcZkOMUAAAAAJtOQnfvx25iDZu2VllitUQ4OFwf';
 require_once('../plugins/recaptcha-php-1.11/recaptchalib.php');
   $privatekey = $secretKey;
   $resp = recaptcha_check_answer ($privatekey,
