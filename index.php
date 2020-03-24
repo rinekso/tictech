@@ -22,17 +22,6 @@
 	<link rel="stylesheet" type="text/css" href="assets/font/font.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
-    <script src="https://www.google.com/recaptcha/api.js?render=6LcZkOMUAAAAAH9e2sGPCAw07JXDtnEu9ZQp0ds8"></script>
-    <script>
-        grecaptcha.ready(function () {
-            grecaptcha.execute('6LcZkOMUAAAAAH9e2sGPCAw07JXDtnEu9ZQp0ds8', { action: 'contact' }).then(function (token) {
-                var recaptchaResponse = document.getElementById('recaptchaResponse');
-                recaptchaResponse.value = token;
-            });
-        });
-    </script>
-
 </head>
 <body>
 <div class="grid">
@@ -254,7 +243,12 @@
 		    		<input type="text" class="form-control" name="name" placeholder="Name">
 		    		<input type="email" class="form-control" name="email" placeholder="Email">
 		    		<textarea class="form-control" name="comment" placeholder="Comment"></textarea>
-					<div class="g-recaptcha" data-sitekey="6LcZkOMUAAAAAH9e2sGPCAw07JXDtnEu9ZQp0ds8"></div>
+		    		<?php
+					require_once('assets/plugins/recaptcha-php-1.11/recaptchalib.php');
+		          $publickey = "6LcZkOMUAAAAAH9e2sGPCAw07JXDtnEu9ZQp0ds8"; // you got this from the signup page
+		          echo recaptcha_get_html($publickey);
+		    		?>
+					<!-- <div class="g-recaptcha" data-sitekey="6LcZkOMUAAAAAH9e2sGPCAw07JXDtnEu9ZQp0ds8"></div> -->
 		    		<button class="btn btn-primary" type="submit">Send</button>
 		    	</form>
 	    	</div>
