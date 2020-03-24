@@ -38,7 +38,7 @@ $responseKeys = json_decode($response,true);
   $mail->Body =  'name : '.$_POST['name'].'<br>email : '.$_POST['email'].'<br>message : '.$_POST['comment'];
   $mail->AddAddress("agammail95@gmail.com");
   $mail->Send();
-  // header('location:../../.?feedback=2');
+  header('location:../../.');
 // }
  /*
 $transport = Swift_SmtpTransport::newInstance('smtp.gmail.com', 465, "ssl")
