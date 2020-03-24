@@ -4,7 +4,6 @@
 <!-- Global site tag (gtag.js) - Google Analytics -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Tictech | Studio VR & AR Indonesia</title>
 	<meta name="description" lang="indonesia" content="Tictech Studio merupakan software house yang bergerak dalam bidang VR (Virtual Reality) dan AR (Augmented Reality) di Indonesia. Kami mengerjakan beberapa proyek besar dalam visualisasi dan teknologi berbasis AR maupun VR. Setiap aplikasi VR dan AR dapat dikembangkan di sini. Tictech Studio.">
 	<meta name="description" content="Tictech Studio is a software house that is engaged in VR (Virtual Reality) and AR (Augmented Reality) in Indonesia. We are working on several major projects in visualization and AR-based and VR-based technology. Every VR and AR application can be developed here. Tictech Studio." lang="english">
