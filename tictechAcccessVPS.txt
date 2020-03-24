@@ -2,3 +2,7 @@ akses halaman server web tictech:
 host : 66.42.59.115
 username : root
 password : =P4n+gV2AG_*zhCa
+
+niagahoster domain tictech
+email : riobaguswahyudiono@gmail.com
+password : d03ac62886

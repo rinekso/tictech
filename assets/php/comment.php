@@ -2,7 +2,7 @@
 use PHPMailer\PHPMailer\PHPMailer;
 require '../plugins/vendor/autoload.php';
 
-$secretKey = '6LcZkOMUAAAAAJtOQnfvx25iDZu2VllitUQ4OFwf';
+$secretKey = '6Le2jqEUAAAAAGLL4CxwX8BTZ-_OlSn6SKfOl2x0';
 $captcha = $_POST['g-recaptcha-response'];
 $ip = $_SERVER['REMOTE_ADDR'];
 $response=file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$secretKey."&response=".$captcha."&remoteip=".$ip);
@@ -11,10 +11,10 @@ $responseKeys = json_decode($response,true);
 // if(intval($responseKeys["success"]) !== 1) {
   // echo '<p class="alert alert-warning">Please check the the captcha form.</p>';
 // } else {
-  session_start();
-  $_SESSION['name'] = $_POST['name'];
-  $_SESSION['company'] = $_POST['company'];
-  $_SESSION[$_POST['name']."-".$_POST['company']] = 0;
+  // session_start();
+  // $_SESSION['name'] = $_POST['name'];
+  // $_SESSION['company'] = $_POST['company'];
+  // $_SESSION[$_POST['name']."-".$_POST['company']] = 0;
 
   $mail = new PHPMailer; // create a new object
   $mail->IsSMTP(); // enable SMTP
@@ -34,20 +34,14 @@ $responseKeys = json_decode($response,true);
   $mail->Username = "info@tictechstudio.com";
   $mail->Password = "Sebatdulu1";
   $mail->SetFrom("no-reply@tictechstudio.com");
-  $mail->Subject = "Portfolio of Tictech";
-  $mail->Body =  'Greetings '.$_POST['name'].' from '.$_POST['company'].' !<br>Here is link to download our portfolio: <a href="http://tictechstudio.com/download.php">Download Portfolio</a>. Whoever you are, we hope to collaborate in creating a masterpiece project with you in the future. You can check our contact list in our portfolio, so, please feel free to consult with us. We look forward to hearing from you in the future!<br>
-  <br>
-  Fandi Alfiansah<br>
-  Head of Production<br>
-  TicTech Studio<br>';
-  $mail->AddAddress($_POST['email']);
+  $mail->Subject = "you had a message";
+  $mail->Body =  'name : '.$_POST['name'].'<br>email : '.$_POST['email'].'<br>message : '.$_POST['comment'];
+  $mail->AddAddress("agammail95@gmail.com");
   $mail->Send();
   // header('location:../../.?feedback=2');
 // }
  /*
 $transport = Swift_SmtpTransport::newInstance('smtp.gmail.com', 465, "ssl")
-  ->setUsername('reyno33333@gmail.com')
-  ->setPassword('kristusku');
 
 $mailer = Swift_Mailer::newInstance($transport);
 
