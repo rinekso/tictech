@@ -22,8 +22,6 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
 
 <!-- google recaptcha -->
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
