@@ -22,7 +22,16 @@
 	<link rel="stylesheet" type="text/css" href="assets/font/font.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
 
-<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.2/css/bulma.min.css">
+    <script src="https://www.google.com/recaptcha/api.js?render=6LcZkOMUAAAAAH9e2sGPCAw07JXDtnEu9ZQp0ds8"></script>
+    <script>
+        grecaptcha.ready(function () {
+            grecaptcha.execute('6LcZkOMUAAAAAH9e2sGPCAw07JXDtnEu9ZQp0ds8', { action: 'contact' }).then(function (token) {
+                var recaptchaResponse = document.getElementById('recaptchaResponse');
+                recaptchaResponse.value = token;
+            });
+        });
+    </script>
 
 </head>
 <body>
@@ -261,6 +270,36 @@
 	    	</div>
 	    </div>
 	</div>
+<div class="modal fade" id="feedback" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Sorry</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      	<p>The message was not complete. Please, complete the captcha.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="feedback2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">THANKS!!!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      	<p>Thank you for your message. We will read the message soon.</p>
+      </div>
+    </div>
+  </div>
+</div>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
@@ -268,5 +307,27 @@
 <script type="text/javascript" src="assets/plugins/bootstrap/dist/js/bootstrap.min.js"></script>
 
 <script type="text/javascript" src="assets/js/custom.js"></script>
+<?php
+if(@$_GET['feedback'] == "1"){
+?>
+
+<?php	
+        echo "
+        <script type='text/javascript'>
+    $(window).on('load',function(){
+        $('#feedback').modal('show');
+    });
+</script>
+        ";
+}elseif(@$_GET['feedback'] == "2"){
+	echo "
+        <script type='text/javascript'>
+    $(window).on('load',function(){
+        $('#feedback2').modal('show');
+	});
+	</script>
+	";
+}
+?>
 </body>
 </html>
