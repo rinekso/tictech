@@ -8,7 +8,7 @@
 	<meta name="description" lang="indonesia" content="Tictech Studio merupakan software house yang bergerak dalam bidang VR (Virtual Reality) dan AR (Augmented Reality) di Indonesia. Kami mengerjakan beberapa proyek besar dalam visualisasi dan teknologi berbasis AR maupun VR. Setiap aplikasi VR dan AR dapat dikembangkan di sini. Tictech Studio.">
 	<meta name="description" content="Tictech Studio is a software house that is engaged in VR (Virtual Reality) and AR (Augmented Reality) in Indonesia. We are working on several major projects in visualization and AR-based and VR-based technology. Every VR and AR application can be developed here. Tictech Studio." lang="english">
 	<meta name="keywords" content="AR, VR, AR & VR, AR VR Indonesia, Teknologi AR, Teknologi VR, VR Indonesia, AR Indonesia, Surabaya, Indonesia, Startup, Teknologi, Industri 4.0, 4.0, Game, Game Indie, Indie, Developer Game, Developer, Augmented Reality, Virtual Reality, Augmented Reality Virtual Reality Indonesia">
-	<meta name="google-site-verification" content="6LcZkOMUAAAAAH9e2sGPCAw07JXDtnEu9ZQp0ds8" />
+	<meta name="google-site-verification" content="6Ldek-MUAAAAAFBSRkcMZaDk97y1-ijV_Gj6S52S" />
 
 	<link rel="icon" href="assets/images/logo_only.png">
 	<link rel="stylesheet" type="text/css" href="assets/plugins/bootstrap/dist/css/bootstrap.min.css">
@@ -249,7 +249,7 @@
 		    		<textarea class="form-control" name="comment" placeholder="Comment"></textarea>
         <?php
           require_once('assets/plugins/recaptcha-php-1.11/recaptchalib.php');
-          $publickey = "6LcZkOMUAAAAAH9e2sGPCAw07JXDtnEu9ZQp0ds8"; // you got this from the signup page
+          $publickey = "6Ldek-MUAAAAAFBSRkcMZaDk97y1-ijV_Gj6S52S"; // you got this from the signup page
           echo recaptcha_get_html($publickey);
         ?>
  					<!-- <div class="g-recaptcha" data-sitekey="6LcZkOMUAAAAAH9e2sGPCAw07JXDtnEu9ZQp0ds8"></div> -->
