@@ -248,7 +248,7 @@
 		    		<input type="email" class="form-control" name="email" placeholder="Email">
 		    		<textarea class="form-control" name="comment" placeholder="Comment"></textarea>
         <?php
-          require_once('recaptchalib.php');
+          require_once('assets/plugins/recaptcha-php-1.11/recaptchalib.php');
           $publickey = "6LcZkOMUAAAAAH9e2sGPCAw07JXDtnEu9ZQp0ds8"; // you got this from the signup page
           echo recaptcha_get_html($publickey);
         ?>
