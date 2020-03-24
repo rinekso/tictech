@@ -2,19 +2,19 @@
 use PHPMailer\PHPMailer\PHPMailer;
 require '../plugins/vendor/autoload.php';
 
-$secretKey = '6LcZkOMUAAAAAJtOQnfvx25iDZu2VllitUQ4OFwf';
-require_once('../plugins/recaptcha-php-1.11/recaptchalib.php');
-  $privatekey = $secretKey;
-  $resp = recaptcha_check_answer ($privatekey,
-                                $_SERVER["REMOTE_ADDR"],
-                                $_POST["recaptcha_challenge_field"],
-                                $_POST["recaptcha_response_field"]);
+// $secretKey = '6LcZkOMUAAAAAJtOQnfvx25iDZu2VllitUQ4OFwf';
+// require_once('../plugins/recaptcha-php-1.11/recaptchalib.php');
+//   $privatekey = $secretKey;
+//   $resp = recaptcha_check_answer ($privatekey,
+//                                 $_SERVER["REMOTE_ADDR"],
+//                                 $_POST["recaptcha_challenge_field"],
+//                                 $_POST["recaptcha_response_field"]);
 
-  if (!$resp->is_valid) {
-    // What happens when the CAPTCHA was entered incorrectly
-    die ("The reCAPTCHA wasn't entered correctly. Go back and try it again." .
-         "(reCAPTCHA said: " . $resp->error . ")");
-  }else{
+//   if (!$resp->is_valid) {
+//     // What happens when the CAPTCHA was entered incorrectly
+//     die ("The reCAPTCHA wasn't entered correctly. Go back and try it again." .
+//          "(reCAPTCHA said: " . $resp->error . ")");
+//   }else{
   $mail = new PHPMailer; // create a new object
   $mail->IsSMTP(); // enable SMTP
   $mail->SMTPDebug = 1; // debugging: 1 = errors and messages, 2 = messages only
@@ -41,7 +41,7 @@ require_once('../plugins/recaptcha-php-1.11/recaptchalib.php');
   $mail->AddAddress("agammail95@gmail.com");
   $mail->Send();
   header('location:../../.?feedback=2');
-}
+// }
 // }
  /*
 $transport = Swift_SmtpTransport::newInstance('smtp.gmail.com', 465, "ssl")
