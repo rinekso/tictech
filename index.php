@@ -246,7 +246,7 @@
 		    		<input type="email" class="form-control" name="email" placeholder="Email">
 		    		<textarea class="form-control" name="comment" placeholder="Comment"></textarea>
 					<div class="g-recaptcha" data-sitekey="6LcZkOMUAAAAAH9e2sGPCAw07JXDtnEu9ZQp0ds8"></div>
-		    		<button class="btn btn-primary">Send</button>
+		    		<button class="btn btn-primary" type="submit">Send</button>
 		    	</form>
 	    	</div>
 	    	<div class="border"></div>
