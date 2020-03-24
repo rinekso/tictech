@@ -11,9 +11,6 @@ require_once('../plugins/recaptcha-php-1.11/recaptchalib.php');
                                 $_POST["recaptcha_response_field"]);
 
   if (!$resp->is_valid) {
-    // What happens when the CAPTCHA was entered incorrectly
-    die ("The reCAPTCHA wasn't entered correctly. Go back and try it again." .
-         "(reCAPTCHA said: " . $resp->error . ")");
   $mail = new PHPMailer; // create a new object
   $mail->IsSMTP(); // enable SMTP
   $mail->SMTPDebug = 1; // debugging: 1 = errors and messages, 2 = messages only

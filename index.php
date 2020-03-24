@@ -22,6 +22,8 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
 
 <!-- google recaptcha -->
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 </head>
@@ -245,12 +247,7 @@
 		    		<input type="text" class="form-control" name="name" placeholder="Name">
 		    		<input type="email" class="form-control" name="email" placeholder="Email">
 		    		<textarea class="form-control" name="comment" placeholder="Comment"></textarea>
-        <?php
-          require_once('assets/plugins/recaptcha-php-1.11/recaptchalib.php');
-          $publickey = "6Ldek-MUAAAAAFBSRkcMZaDk97y1-ijV_Gj6S52S"; // you got this from the signup page
-          echo recaptcha_get_html($publickey);
-        ?>
- 					<!-- <div class="g-recaptcha" data-sitekey="6LcZkOMUAAAAAH9e2sGPCAw07JXDtnEu9ZQp0ds8"></div> -->
+ 					<div class="g-recaptcha" data-sitekey="6Ldek-MUAAAAAFBSRkcMZaDk97y1-ijV_Gj6S52S"></div>
 		    		<button class="btn btn-primary" type="submit">Send</button>
 		    	</form>
 	    	</div>
