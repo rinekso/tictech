@@ -2,15 +2,15 @@
 use PHPMailer\PHPMailer\PHPMailer;
 require '../plugins/vendor/autoload.php';
 
-$secretKey = '6Le2jqEUAAAAAGLL4CxwX8BTZ-_OlSn6SKfOl2x0';
-$captcha = $_POST['g-recaptcha-response'];
-$ip = $_SERVER['REMOTE_ADDR'];
-$response=file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$secretKey."&response=".$captcha."&remoteip=".$ip);
-$responseKeys = json_decode($response,true);
+// $secretKey = '6Le2jqEUAAAAAGLL4CxwX8BTZ-_OlSn6SKfOl2x0';
+// $captcha = $_POST['g-recaptcha-response'];
+// $ip = $_SERVER['REMOTE_ADDR'];
+// $response=file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$secretKey."&response=".$captcha."&remoteip=".$ip);
+// $responseKeys = json_decode($response,true);
 
-if(intval($responseKeys["success"]) !== 1) {
-  echo '<p class="alert alert-warning">Please check the the captcha form.</p>';
-} else {
+// if(intval($responseKeys["success"]) !== 1) {
+//   echo '<p class="alert alert-warning">Please check the the captcha form.</p>';
+// } else {
   // session_start();
   // $_SESSION['name'] = $_POST['name'];
   // $_SESSION['company'] = $_POST['company'];
@@ -42,7 +42,7 @@ if(intval($responseKeys["success"]) !== 1) {
   $mail->AddAddress("agammail95@gmail.com");
   $mail->Send();
   header('location:../../.');
-}
+// }
  /*
 $transport = Swift_SmtpTransport::newInstance('smtp.gmail.com', 465, "ssl")
 
