@@ -8,9 +8,9 @@ $ip = $_SERVER['REMOTE_ADDR'];
 $response=file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$secretKey."&response=".$captcha."&remoteip=".$ip);
 $responseKeys = json_decode($response,true);
 
-// if(intval($responseKeys["success"]) !== 1) {
-  // echo '<p class="alert alert-warning">Please check the the captcha form.</p>';
-// } else {
+if(intval($responseKeys["success"]) !== 1) {
+  echo '<p class="alert alert-warning">Please check the the captcha form.</p>';
+} else {
   // session_start();
   // $_SESSION['name'] = $_POST['name'];
   // $_SESSION['company'] = $_POST['company'];
@@ -35,11 +35,14 @@ $responseKeys = json_decode($response,true);
   $mail->Password = "Sebatdulu1";
   $mail->SetFrom("no-reply@tictechstudio.com");
   $mail->Subject = "you had a message";
-  $mail->Body =  'name : '.$_POST['name'].'<br>email : '.$_POST['email'].'<br>message : '.$_POST['comment'];
+  $mail->Body =
+      'Nama : '.$_POST['name'].'<br>'.
+      'Email : '.$_POST['email'].'<br>'.
+      'Pesan : '.$_POST['comment'].'<br>';
   $mail->AddAddress("agammail95@gmail.com");
   $mail->Send();
   header('location:../../.');
-// }
+}
  /*
 $transport = Swift_SmtpTransport::newInstance('smtp.gmail.com', 465, "ssl")
 
