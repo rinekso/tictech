@@ -44,13 +44,13 @@
  -->
  			<a class="carret-menu" href="#"><i class="fa fa-bars"></i></a>
 			<ul class="menu">
-				<a href="#section2">
+				<a href="#page2">
 					<li>OUR SERVICE</li>
 				</a>
-				<a href="#section3">
+				<a href="#page3">
 					<li>PRODUCT</li>
 				</a>
-				<a href="#section5">
+				<a href="#page5">
 					<li>CONTACT</li>
 				</a>
 			</ul>

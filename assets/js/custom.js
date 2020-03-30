@@ -87,6 +87,9 @@ $(document).ready(function(event) {
 	*/
 	console.log($(window).width());
 	if($(window).width() > 1024){
+		$(".menu a:eq(0)").attr('#section2');
+		$(".menu a:eq(1)").attr('#section3');
+		$(".menu a:eq(2)").attr('#section5');
 		$('#pagepiling').pagepiling({
 			menu: '#menu',
 			// direction: 'none',
