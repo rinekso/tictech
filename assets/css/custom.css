@@ -939,7 +939,7 @@ a:hover{
 	.icon-socmed:hover img{
 		opacity: 0.8;
 	}
-	.mobile{
+	.mobile, a.carret-menu{
 		display: none;
 	}
 
