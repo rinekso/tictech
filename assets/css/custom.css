@@ -1052,6 +1052,7 @@ a:hover{
 		text-align: right;
 	}
 	a.carret-menu{
+		display: block;
 		z-index: 50;
 		position: fixed;
 		right: 20px;
