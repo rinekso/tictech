@@ -42,61 +42,79 @@ function gridSystem(x,y){
 
 $(document).ready(function(event) {
 
-const myVideo = document.getElementById('video');
+	const myVideo = document.getElementById('video');
 
-// Not all browsers return promise from .play().
-const playPromise = myVideo.play() || Promise.reject('');
-playPromise.then(() => {
-  // Video could be autoplayed, do nothing.
-}).catch(err => {
-  // Video couldn't be autoplayed because of autoplay policy. Mute it and play.
-  myVideo.muted = true;
-  myVideo.play();
-});
+	// portofolio
+	$(".porto-button").click(function(){
+		$("#portofolio").modal('show');
+	});
 
-  var $grid = $('.grid')
-  var $gridItem = $('.grid__item')
-  var gridItemHeight = $gridItem.height()
-  var gridItemWidth = $gridItem.width()
+	// Not all browsers return promise from .play().
+	const playPromise = myVideo.play() || Promise.reject('');
+	playPromise.then(() => {
+	  // Video could be autoplayed, do nothing.
+	}).catch(err => {
+	  // Video couldn't be autoplayed because of autoplay policy. Mute it and play.
+	  myVideo.muted = true;
+	  myVideo.play();
+	});
 
-  horzCount = Math.floor($grid.width() / gridItemWidth)
-  vertCount = Math.floor($grid.height() / gridItemHeight)
-  
-  var totalGridItems = horzCount * vertCount
-  for (var i = 0; i < totalGridItems; i++) {
-    var $gridItemClone = $gridItem.clone();
-    $grid.append($gridItemClone);
-  }
+	var $grid = $('.grid')
+	var $gridItem = $('.grid__item')
+	var gridItemHeight = $gridItem.height()
+	var gridItemWidth = $gridItem.width()
+
+	horzCount = Math.floor($grid.width() / gridItemWidth)
+	vertCount = Math.floor($grid.height() / gridItemHeight)
+
+	var totalGridItems = horzCount * vertCount
+	for (var i = 0; i < totalGridItems; i++) {
+	var $gridItemClone = $gridItem.clone();
+	$grid.append($gridItemClone);
+	}
+	var menuToggle = false;
+	$("a.carret-menu").click(function(){
+		if(!menuToggle){
+			$(".menu").addClass("active");
+		}else{
+			$(".menu").removeClass("active");
+		}
+		menuToggle = !menuToggle;
+		return false;
+	});
 	/*
 	* Plugin intialization
 	*/
-	$('#pagepiling').pagepiling({
-		menu: '#menu',
-		// direction: 'none',
-		anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
-	    // sectionsColor: ['', '#ee005a', '#2C3E50', '#39C'],
-	    navigation: {
-	    	'position': 'right',
-	   		'tooltips': ['HOME', 'OUR SERVICE', 'AR MIRROR', 'VR TRAINING', 'CONTACT']
-	   	},
-	    afterRender: function(){
-	    	$('#pp-nav').addClass('custom');
-	    },
-	    afterLoad: function(anchorLink, index){
-	    	if(index>1){
-	    		$('#pp-nav').removeClass('custom');
-	    	}else{
-	    		$('#pp-nav').addClass('custom');
-	    	}
-	    },
-	    onLeave: function(index,nextIndex,direction){
-	    	// if(nextIndex>1){
-		    // 	$("#section"+nextIndex).addClass('animated');
-	    	// }
-		    transitionOut("#section"+nextIndex,index,nextIndex);
-		    // $("#section"+nextIndex+" .anim").addClass('animated');
-	    }
-	});
+	console.log($(window).width());
+	if($(window).width() > 1024){
+		$('#pagepiling').pagepiling({
+			menu: '#menu',
+			// direction: 'none',
+			anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
+		    // sectionsColor: ['', '#ee005a', '#2C3E50', '#39C'],
+		    navigation: {
+		    	'position': 'right',
+		   		'tooltips': ['HOME', 'OUR SERVICE', 'AR MIRROR', 'VR TRAINING', 'CONTACT']
+		   	},
+		    afterRender: function(){
+		    	$('#pp-nav').addClass('custom');
+		    },
+		    afterLoad: function(anchorLink, index){
+		    	if(index>1){
+		    		$('#pp-nav').removeClass('custom');
+		    	}else{
+		    		$('#pp-nav').addClass('custom');
+		    	}
+		    },
+		    onLeave: function(index,nextIndex,direction){
+		    	// if(nextIndex>1){
+			    // 	$("#section"+nextIndex).addClass('animated');
+		    	// }
+			    transitionOut("#section"+nextIndex,index,nextIndex);
+			    // $("#section"+nextIndex+" .anim").addClass('animated');
+		    }
+		});
+	}
 
 	function transitionOut(section,index,next){
 		if(index > 2 && index < 5){

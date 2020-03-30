@@ -2,20 +2,13 @@
 use PHPMailer\PHPMailer\PHPMailer;
 require '../plugins/vendor/autoload.php';
 
-$secretKey = '6LcZkOMUAAAAAJtOQnfvx25iDZu2VllitUQ4OFwf';
-$captcha = $_POST['g-recaptcha-response'];
-$ip = $_SERVER['REMOTE_ADDR'];
-$response=file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=".$secretKey."&response=".$captcha."&remoteip=".$ip);
-$responseKeys = json_decode($response,true);
-
-// if(intval($responseKeys["success"]) !== 1) {
-  // echo '<p class="alert alert-warning">Please check the the captcha form.</p>';
-// } else {
-  session_start();
-  $_SESSION['name'] = $_POST['name'];
-  $_SESSION['company'] = $_POST['company'];
-  $_SESSION[$_POST['name']."-".$_POST['company']] = 0;
-
+  if(isset($_POST['g-recaptcha-response']) && !empty($_POST['g-recaptcha-response']))
+  {
+        $secret = '6LcZkOMUAAAAAJtOQnfvx25iDZu2VllitUQ4OFwf';
+        $verifyResponse = file_get_contents('https://www.google.com/recaptcha/api/siteverify?secret='.$secret.'&response='.$_POST['g-recaptcha-response']);
+        $responseData = json_decode($verifyResponse);
+        if($responseData->success)
+        {
   $mail = new PHPMailer; // create a new object
   $mail->IsSMTP(); // enable SMTP
   $mail->SMTPDebug = 1; // debugging: 1 = errors and messages, 2 = messages only
@@ -42,7 +35,10 @@ $responseKeys = json_decode($response,true);
   TicTech Studio<br>';
   $mail->AddAddress($_POST['email']);
   $mail->Send();
-  // header('location:../../.?feedback=2');
+  header('location:../../.?feedback=3');
+}else{
+  header('location:../../.?feedback=1');
+}
 // }
  /*
 $transport = Swift_SmtpTransport::newInstance('smtp.gmail.com', 465, "ssl")

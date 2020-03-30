@@ -42,14 +42,15 @@
 		<li class="pageLink" data-menuanchor="page4"><a href="#page4">Contact</a></li>
 	</ul>
  -->
+ 			<a class="carret-menu" href="#"><i class="fa fa-bars"></i></a>
 			<ul class="menu">
-				<a href="#page2">
+				<a href="#section2">
 					<li>OUR SERVICE</li>
 				</a>
-				<a href="#page3">
+				<a href="#section3">
 					<li>PRODUCT</li>
 				</a>
-				<a href="#page5">
+				<a href="#section5">
 					<li>CONTACT</li>
 				</a>
 			</ul>
@@ -186,7 +187,7 @@
 									By using augmented reality technology, you can bring immersiveness and reality object or character but in virtual way. Our photobooth is often used at weddings, museums and certain events to bring a different and fun experience to visitors.
 								</p>
 								
-								<a href="assets/pdf/TICTECH-PORTOFOLIO.pdf" class="button">Company Profile</a>
+								<a href="#" class="button porto-button">Company Profile</a>
 							</div>
 						</div>
 						<div class="col-md-2"></div>
@@ -232,7 +233,7 @@
 									We can conceptualize, design and build your own AR/VR, Interactive Application & System Gamification with customized features for your business.
 								</p>
 								
-								<a href="assets/pdf/TICTECH-PORTOFOLIO.pdf" class="button">Company Profile</a>
+								<a href="#" class="button porto-button">Company Profile</a>
 							</div>
 						</div>
 					</div>
@@ -254,7 +255,7 @@
 	    	<div class="fadeInDown anim">
 		    	<img src="assets/images/Tictech_logo_2018.png" class="logo-contact">
 		    	<br>
-				<a href="assets/pdf/TICTECH-PORTOFOLIO.pdf" class="button">Company Profile Download</a>
+				<a href="#" class="button porto-button">Company Profile Download</a>
 				<p>
 					info@tictechstudio.com | +62 85257104594 | instagram : tictechstudio | twitter : tictech_studio<br>linkedin : tictech-studio | facebook : tictech.studio | Lanius Lab, Jl. Dr. Ir. Soekarno No. 487<br>
 					Penjaringan Sari, Rungkut, Kota Surabaya, Jawa Timur, 60115
@@ -292,6 +293,42 @@
     </div>
   </div>
 </div>
+<div class="modal fade" id="feedback3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">THANKS!!!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+      	<p>Thank you for download our company profile. Please check your email to get our company profile.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal fade" id="portofolio" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Portofolio Form</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+		<form method="post" action="assets/php/portofolio.php">
+			<input type="text" class="form-control" name="name" placeholder="Name">
+			<input type="text" class="form-control" name="company" placeholder="Company">
+			<input type="email" class="form-control" name="email" placeholder="Email">
+			<div class="g-recaptcha" data-sitekey="6LcZkOMUAAAAAH9e2sGPCAw07JXDtnEu9ZQp0ds8"></div>
+			<button class="btn btn-primary" type="submit">Sumbit</button>
+		</form>
+      </div>
+    </div>
+  </div>
+</div>
 
 <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 
@@ -316,6 +353,14 @@ if(@$_GET['feedback'] == "1"){
         <script type='text/javascript'>
     $(window).on('load',function(){
         $('#feedback2').modal('show');
+	});
+	</script>
+	";
+}elseif(@$_GET['feedback'] == "3"){
+	echo "
+        <script type='text/javascript'>
+    $(window).on('load',function(){
+        $('#feedback3').modal('show');
 	});
 	</script>
 	";
