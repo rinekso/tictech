@@ -20,6 +20,16 @@
 	<link rel="stylesheet" type="text/css" href="assets/font/font.css">
 	<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
 
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-132734580-2');
+</script>
+
 <!-- google recaptcha -->
 <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
